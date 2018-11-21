@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:olamundo.localhost="http://olamundo.localhost">
+  <process name="olamundo.localhost:OlaMundo">
+    <active>true</active>
+    <retired>false</retired>
+    <in-memory>false</in-memory>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="olamundo.localhost:OlaMundoService" port="OlaMundoPort"/>
+    </provide>
+  </process>
+</deploy>
